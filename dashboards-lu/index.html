@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luzern Dashboards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+
+        .intro {
+            font-size: 1.1em;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.7em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2:first-of-type {
+            margin-top: 20px;
+        }
+
+        .dashboard-section {
+            margin-bottom: 30px;
+        }
+
+        .dashboard-list {
+            list-style-type: none;
+            padding-left: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .dashboard-list li {
+            margin: 0;
+        }
+
+        .dashboard-list a {
+            color: #3498db;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            background-color: #f8f9fa;
+        }
+
+        .dashboard-list a:hover {
+            background-color: #3498db;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dashboard-list a::before {
+            content: "📊 ";
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Luzern Economic Analysis Dashboards</h1>
+        <p class="intro">Interactive visualizations and analysis dashboards for economic data from the Luzern region.</p>
+        
+        <div class="dashboard-section">
+            <h2>Branchenanalyse (Industry Analysis)</h2>
+            <ul class="dashboard-list">
+                <li><a href="1-branchenanalyse/01-luzern_industry-treemap.html">Industry Treemap</a></li>
+                <li><a href="1-branchenanalyse/02-luzern_industry-relatedness_space.html">Industry Relatedness Space</a></li>
+                <li><a href="1-branchenanalyse/02b-luzern_industry-relatedness_space-color_NOGA.html">Industry Relatedness Space (NOGA Color)</a></li>
+                <li><a href="1-branchenanalyse/02c-plain_industry-relatedness_space-color_NOGA.html">Plain Industry Relatedness Space (NOGA Color)</a></li>
+                <li><a href="1-branchenanalyse/03-luzern_industry-density_vs_rta_combined.html">Industry Density vs RTA Combined</a></li>
+            </ul>
+        </div>
+
+        <div class="dashboard-section">
+            <h2>Produktanalyse (Product Analysis)</h2>
+            <ul class="dashboard-list">
+                <li><a href="2-produktanalyse/01a-luzern_product-treemap-all.html">Product Treemap (All)</a></li>
+                <li><a href="2-produktanalyse/01b-luzern_product-treemap-excl_services.html">Product Treemap (Excluding Services)</a></li>
+                <li><a href="2-produktanalyse/02-luzern_product-relatedness_space.html">Product Relatedness Space</a></li>
+                <li><a href="2-produktanalyse/02b-luzern_products-relatedness_space-color_aec_categories.html">Product Relatedness Space (AEC Color)</a></li>
+                <li><a href="2-produktanalyse/03-luzern_product-density_vs_rta_combined.html">Product Density vs RTA Combined</a></li>
+            </ul>
+        </div>
+
+        <div class="dashboard-section">
+            <h2>Patentanalyse (Patent Analysis)</h2>
+            <ul class="dashboard-list">
+                <li><a href="3-patentanalyse/01-luzern_patents-treemap.html">Patents Treemap</a></li>
+                <li><a href="3-patentanalyse/02-luzern_patents-relatedness_space.html">Patents Relatedness Space</a></li>
+                <li><a href="3-patentanalyse/02b-luzern_patents-relatedness_space-color_IPC.html">Patents Relatedness Space (IPC Color)</a></li>
+                <li><a href="3-patentanalyse/03-luzern_patents-density_vs_rta_combined.html">Patents Density vs RTA Combined</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
